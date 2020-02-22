@@ -61,10 +61,65 @@ function check(a, x) {
 // Patrick Feeney => P.F
 
 function abbrevName(name) {
-  var name = "First Last";
   var initials = Array.prototype.map
     .call(name.split(" "), function(x) {
       return x.substring(0, 1).toUpperCase();
     })
-    .join("");
+    .join(".");
+  return initials;
+}
+
+// challenge 7
+
+// If you can't sleep, just count sheep!!
+
+// Task:
+// Given a non-negative integer, 3 for example,
+// return a string with a murmur: "1 sheep...2 sheep...3 sheep...".
+// Input will always be valid, i.e. no negative integers.
+
+var countSheep = function(num) {
+  var murmur = "";
+  for (var i = 0; i < num; i++) {
+    murmur += i + 1 + " sheep...";
+  }
+  return murmur;
+};
+
+countSheep(3);
+
+// challenge 8
+// Complete the solution so that it reverses the string value passed into it.
+
+function solution(str) {
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    newString += str[i];
+  }
+  return newString;
+}
+
+// challenge 9
+// Complete the function that accepts a string parameter, and
+// reverses each word in the string. All spaces in the string should be retained.
+
+function reverseWords(str) {
+  // Go for it
+
+  var reversed = str
+    .split(" ")
+    .reverse()
+    .join(" ");
+  return reversed;
+  // let words = [];
+  // words = str.match(/\S+/g);
+  // let result = "";
+  // for (let i = 0; i < words.length; i++) {
+  //   result +=
+  //     words[i]
+  //       .split("")
+  //       .reverse()
+  //       .join("") + "";
+  // }
+  // return result;
 }
