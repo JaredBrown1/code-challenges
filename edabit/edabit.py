@@ -108,3 +108,85 @@ def divisible(num):
         return True
     else:
         return False
+
+# In this challenge, a farmer is asking you to tell him how many legs can
+# be counted among all his animals. The farmer breeds three species:
+
+# chickens = 2 legs
+# cows = 4 legs
+# pigs = 4 legs
+# The farmer has counted his animals and he gives you a subtotal for each species.
+# You have to implement a function that returns the total number of legs of all the animals.
+
+
+def animals(chickens, cows, pigs):
+    return (chickens * 2) + (cows * 4) + (pigs * 4)
+
+
+# Create a function that takes an integer and return True if
+# it's divisible by 100, otherwise return False.
+
+def divisible(num):
+    if num % 100 == 0:
+        return True
+    else:
+        return False
+
+# Create a function that takes a list and returns the sum of all numbers in the list.
+
+
+def get_sum_of_elements(lst):
+    return sum(lst)
+
+# Given a list of integers, return the difference between the largest
+# and smallest integers in the list.
+
+
+def difference(nums):
+    return max(nums) - min(nums)
+
+# Create a function that takes a name and returns a greeting in the form of a string.
+
+
+def hello_name(name):
+    return "Hello " + name + "!"
+
+
+# Create a function that accepts a list and returns the last item in the list.
+# The list can be either homogeneous or heterogeneous.
+
+
+def get_last_item(lst):
+    return lst[-1]
+
+# Create a function that returns True if a string is empty and False otherwise.
+
+
+def is_empty(s):
+    if len(s) == 0:
+        return True
+    else:
+        return False
+
+# Create a function that returns the number of frames shown in a given
+# number of minutes for a certain FPS.
+
+
+def frames(minutes, fps):
+    return (fps * 60) * minutes
+
+
+# Given two strings, first_name and last_name, return a single string in the format "last, first".
+
+def concat_name(first_name, last_name):
+    return last_name + ", " + first_name
+
+# Given two integers, a and b, return True if a can be divided evenly by b.
+# Return False otherwise.
+
+
+def divides_evenly(a, b):
+    if a % b == 1:
+        return True
+    else:
+        return False
