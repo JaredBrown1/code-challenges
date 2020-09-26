@@ -186,7 +186,33 @@ def concat_name(first_name, last_name):
 
 
 def divides_evenly(a, b):
-    if a % b == 1:
+    if a % b == 0:
         return True
     else:
         return False
+
+# Write a function that returns the string "something"
+# joined with a space and the given parameter a.
+
+
+def give_me_something(a):
+    return "something " + a
+
+# make a function that will take a string which will either be big tree
+# medium tree or a small tree and return how manny leaves there are on this big
+# tree. on every branch there are N leaves.
+
+
+def how_manny_leaves(tree_type, N):
+    small = 25
+    medium = 50
+    big = 100
+
+    tree_type = input()
+
+    if tree_type == "small tree":
+        N * 25
+    elif tree_type == "medium tree":
+        N * 50
+    elif tree_type == "big tree":
+        N * 100
