@@ -216,3 +216,50 @@ def how_manny_leaves(tree_type, N):
         N * 50
     elif tree_type == "big tree":
         N * 100
+
+# Create a function that takes voltage and current and returns the calculated power.
+
+
+def circuit_power(voltage, current):
+    return voltage * current
+
+# Python has a logical operator and. The and operator takes two boolean values, and returns True if both values are True.
+
+# Consider a and b:
+
+# a is checked if it is True or False.
+# If a is False, False is returned.
+# b is checked if it is True or False.
+# If b is False, False is returned.
+# Otherwise, True is returned (as both a and b are therefore True ).
+# The and operator will only return True for True and True.
+
+# Make a function using the and operator.
+
+
+def And(a, b):
+    if a and b is True:
+        return True
+    else:
+        return False
+
+# Create a function that takes the age and return the age in days.
+
+
+def calc_age(age):
+    return age * 365
+
+
+# Given a list of numbers, return True if the sum of the list is less than 100; otherwise return False.
+
+def list_less_than_100(lst):
+    if sum(lst) < 100:
+        return True
+    else:
+        return False
+
+# Create a function to concatenate two integer lists.
+
+
+def concat(lst1, lst2):
+    return lst1 + lst2
