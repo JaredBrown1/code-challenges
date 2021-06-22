@@ -99,3 +99,16 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("Bastian", "n");
+
+// Repeat a given string str (first argument) for num times (second argument).
+// Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+
+function repeatStringNumTimes(str, num) {
+	if (num < 0) {
+		return "";
+	} else {
+		return Array(num).fill(str).join("");
+	}
+}
+
+repeatStringNumTimes("abc", 3);
