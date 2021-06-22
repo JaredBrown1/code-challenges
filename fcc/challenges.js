@@ -151,3 +151,18 @@ function booWho(bool) {
 }
 
 booWho(null);
+
+// Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+// For the purpose of this exercise, you should also capitalize connecting words like the and of.
+
+function titleCase(str) {
+	let strings = str.split(" ");
+	for (let i = 0; i < strings.length; i++) {
+		// strings[i] = strings.toLowerCase()
+		strings[i] =
+			strings[i][0].toUpperCase() + strings[i].substr(1).toLowerCase();
+	}
+	return strings.join(" ");
+}
+
+titleCase("I'm a little tea pot");
