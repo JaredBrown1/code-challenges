@@ -158,7 +158,6 @@ booWho(null);
 function titleCase(str) {
 	let strings = str.split(" ");
 	for (let i = 0; i < strings.length; i++) {
-		// strings[i] = strings.toLowerCase()
 		strings[i] =
 			strings[i][0].toUpperCase() + strings[i].substr(1).toLowerCase();
 	}
