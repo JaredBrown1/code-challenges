@@ -134,3 +134,9 @@ function nextEdge(side1, side2) {
 function convert(minutes) {
 	return minutes * 60;
 }
+
+// Create a function that takes length and width and finds the perimeter of a rectangle.
+
+function findPerimeter(length, width) {
+	return length * 2 + width * 2;
+}
