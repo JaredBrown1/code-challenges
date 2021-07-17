@@ -154,3 +154,18 @@ function remainder(x, y) {
 function sumPolygon(n) {
 	return (n - 2) * 180;
 }
+
+// You are counting points for a basketball game, given the amount of 2-pointers
+// scored and 3-pointers scored, find the final points for the team and return that value.
+
+function points(twoPointers, threePointers) {
+	return twoPointers * 2 + threePointers * 3;
+}
+
+// A student learning JavaScript was trying to make a function.
+// His code should concatenate a passed string name with string "Edabit"
+// and store it in a variable called result. He needs your help to fix this code.
+
+function nameString(name) {
+	return name + "Edabit";
+}
