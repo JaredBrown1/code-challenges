@@ -184,3 +184,19 @@ function lessThan100(a, b) {
 function addition(num) {
 	return num + 1;
 }
+
+// Write a function that takes the base and height of a triangle and return its area.
+
+function triArea(base, height) {
+	return (base * height) / 2;
+}
+
+// The && operator will only return true for true && true.
+// Make a function using the && operator.
+
+function and(a, b) {
+	if (a === true && b === true) {
+		return true;
+	}
+	return false;
+}
