@@ -206,3 +206,21 @@ function and(a, b) {
 function giveMeSomething(a) {
 	return `something ${a}`;
 }
+
+// Create a function that takes the age in years and returns the age in days.
+
+function calcAge(age) {
+	return age * 365;
+}
+
+// Create a function that takes voltage and current and returns the calculated power.
+
+function circuitPower(voltage, current) {
+	return voltage * current;
+}
+
+// Write a function that returns the string "something" joined with a space " " and the given argument a.
+
+function giveMeSomething(a) {
+	return `something ${a}`;
+}
