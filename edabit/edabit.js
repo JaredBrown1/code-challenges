@@ -224,3 +224,39 @@ function circuitPower(voltage, current) {
 function giveMeSomething(a) {
 	return `something ${a}`;
 }
+
+// Make a function using the && operator.
+
+function and(a, b) {
+	if (a && b === true) {
+		return true;
+	}
+	return false;
+}
+
+// Create a function that takes a boolean variable flag and returns it as a string.
+
+function boolToString(flag) {
+	return flag.toString();
+}
+
+// Create a function that takes the number of wins, draws and
+// losses and calculates the number of points a football team has obtained so far.
+
+function footballPoints(wins, draws, losses) {
+	wins = wins * 3;
+	draws = draws * 1;
+	losses = 0;
+
+	return wins + draws + losses;
+}
+
+// Create a function which calculates the amount of fuel it needs, given the distance.
+
+function calculateFuel(n) {
+	if (n * 10 < 100) {
+		return 100;
+	} else {
+		return n * 10;
+	}
+}
