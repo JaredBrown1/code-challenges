@@ -292,3 +292,12 @@ function points(twoPointers, threePointers) {
 function stringInt(str) {
 	return Number(str);
 }
+
+// Fix the code in the Code tab so the function returns true if and only if x is equal to 7.
+
+function isSeven(x) {
+	if (x === 7) {
+		return true;
+	}
+	return false;
+}
