@@ -320,3 +320,12 @@ function equation(s) {
 function calculator(str) {
 	return eval(str);
 }
+
+// Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+
+function area(h, w) {
+	if (h * w <= 0 || h <= 0 || w <= 0) {
+		return -1;
+	}
+	return h * w;
+}
