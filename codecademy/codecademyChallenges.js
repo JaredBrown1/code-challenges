@@ -140,3 +140,28 @@ const numImaginaryFriends = (totalFriends) => {
 const sillySentence = (str1, str2, str3) => {
 	return `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`;
 };
+
+// Create a function, tipCalculator(), that has two parameters,
+// a string representing the quality of the service received and a number representing the total cost.
+
+// Return the tip, as a number, based on the following:
+// ‘bad’ should return a 5% tip
+// ‘ok’ should return a 15% tip
+// ‘good’ should return a 20% tip
+// ‘excellent’ should return a 30% tip
+// all other inputs should default to 18%
+
+const tipCalculator = (quality, total) => {
+	switch (quality) {
+		case "bad":
+			return total * 0.05;
+		case "ok":
+			return total * 0.15;
+		case "good":
+			return total * 0.2;
+		case "excellent":
+			return total * 0.3;
+		default:
+			return total * 0.18;
+	}
+};
