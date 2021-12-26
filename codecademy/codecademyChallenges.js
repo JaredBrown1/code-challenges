@@ -46,3 +46,36 @@ const lifePhase = (age) => {
 		return "This is not a valid age";
 	}
 };
+
+// Write a function, finalGrade(). It should:
+
+// take three arguments of type number
+// find the average of those three numbers
+// return the letter grade (as a string) that the average corresponds to
+// return ‘You have entered an invalid grade.’ if any of the three grades are less than 0 or greater than 100
+const finalGrade = (num1, num2, num3) => {
+	let nums = (num1 + num2 + num3) / 3;
+
+	if (
+		num1 < 0 ||
+		num1 > 100 ||
+		num2 < 0 ||
+		num2 > 100 ||
+		num3 < 0 ||
+		num3 > 100
+	) {
+		return "You have entered an invalid grade.";
+	}
+
+	if (nums >= 0 && nums <= 59) {
+		return "F";
+	} else if (nums >= 60 && nums <= 69) {
+		return "D";
+	} else if (nums >= 70 && nums <= 79) {
+		return "C";
+	} else if (nums >= 80 && nums <= 89) {
+		return "B";
+	} else if (nums >= 90 && nums <= 100) {
+		return "A";
+	}
+};
