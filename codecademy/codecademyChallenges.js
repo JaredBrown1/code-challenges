@@ -133,3 +133,10 @@ const truthyOrFalsy = (value) => {
 const numImaginaryFriends = (totalFriends) => {
 	return Math.ceil(totalFriends / 4);
 };
+
+// Write a function, sillySentence(), that has 3 string parameters and
+// returns the following silly sentence with the blanks filled in by the arguments passed into the function:
+
+const sillySentence = (str1, str2, str3) => {
+	return `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`;
+};
