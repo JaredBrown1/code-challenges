@@ -353,3 +353,9 @@ function acceptIntoMovie(age, isSupervised) {
 	}
 	return false;
 }
+
+// Write a function that uses the ternary operator to return "yeah" if bool is true, and "nope" otherwise.
+
+function yeah_nope(bool) {
+	return bool ? "yeah" : "nope";
+}
